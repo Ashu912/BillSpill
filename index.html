@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bill Spill</title>
+    <link href="index.css" rel="Stylesheet">
+</head>
+
+<body>
+    <div>
+        <span class="head">BILL</span>
+        <br>
+        <span class="head_2">SPILL</span>
+    </div>
+    <div id="container">
+        <span class="Bill">Bill</span>
+        <input id="InputBill" type="number"
+            placeholder=" ₹                                                                         0"
+            oninput="Input()">
+        <span class="TipSelect">Select Tip %</span>
+        <button class="btn1" onclick="addTip5Per()">5%</button>
+        <button class="btn2" onclick="addTip10Per()">10%</button>
+        <button class="btn3" onclick="addTip15Per()">15%</button>
+        <button class="btn4" onclick="addTip25Per()">25%</button>
+        <button class="btn5" onclick="addTip50Per()">50%</button>
+        <button class="btn6" onclick="addTip75Per()">75%</button>
+
+        <span class="NumberOfPeople">Number of People</span>
+        <div class="PeopleContainer">
+            <img class="Image" src="Assets/People.png" />
+            <button class="AddBtn" onclick="PersonAdd()">+</button>
+            <span id="PeopleValue">0</span>
+            <button class="SubBtn" onclick="PersonSub()">-</button>
+
+        </div>
+        <div id="SecondContainer">
+            <span class="TipAmount">Tip Amount</span>
+            <span id="TipAm">₹ 0.00</span>
+            <span class="PerPerson">/ Person</span>
+
+            <span class="TotalAmount">Total Amount</span>
+            <span id="TotalAm">₹ 0.00</span>
+            <span class="PerPersonAmount">/ Person</span>
+            <button class="ResetBtn" onclick="Reset()">RESET</button>
+
+
+        </div>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
