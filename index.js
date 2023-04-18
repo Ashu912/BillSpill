@@ -59,6 +59,6 @@ function Reset() {
     document.getElementById("InputBill").value = 0;
     document.getElementById("TotalAm").innerText = '₹ 0.00';
     document.getElementById("TipAm").innerText = '₹ 0.00';
-    document.getElementById("PeopleValue").innerText = '1';
+    document.getElementById("PeopleValue").innerText = '0';
 }
 
