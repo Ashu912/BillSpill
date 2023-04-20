@@ -16,21 +16,21 @@
         <span class="Bill">Bill</span>
         <input id="InputBill" type="number"
             placeholder=" ₹                                                                       0"
-            oninput="Input()">
+            oninput="calculateBill()">
         <span class="TipSelect">Select Tip %</span>
-        <button class="btn1" onclick="addTip5Per()">5%</button>
-        <button class="btn2" onclick="addTip10Per()">10%</button>
-        <button class="btn3" onclick="addTip15Per()">15%</button>
-        <button class="btn4" onclick="addTip25Per()">25%</button>
-        <button class="btn5" onclick="addTip50Per()">50%</button>
-        <button class="btn6" onclick="addTip75Per()">75%</button>
+        <button class="btn1" onclick="calculateBill(5)">5%</button>
+        <button class="btn2" onclick="calculateBill(10)">10%</button>
+        <button class="btn3" onclick="calculateBill(15)">15%</button>
+        <button class="btn4" onclick="calculateBill(25)">25%</button>
+        <button class="btn5" onclick="calculateBill(50)">50%</button>
+        <button class="btn6" onclick="calculateBill(75)">75%</button>
 
         <span class="NumberOfPeople">Number of People</span>
         <div class="PeopleContainer">
             <img class="Image" src="Assets/People.png" />
-            <button class="AddBtn" onclick="PersonAdd()">+</button>
-            <span id="PeopleValue">0</span>
-            <button class="SubBtn" onclick="PersonSub()">-</button>
+            <button class="AddBtn" onclick="personCount('inc')">+</button>
+            <input type="text" name="" id="PeopleValue" value="1"  oninput="valueOfPeople()">
+            <button class="SubBtn" onclick="personCount('dec')">-</button>
 
         </div>
         <div id="SecondContainer">
@@ -41,7 +41,7 @@
             <span class="TotalAmount">Total Amount</span>
             <span id="TotalAm">₹ 0.00</span>
             <span class="PerPersonAmount">/ Person</span>
-            <button class="ResetBtn" onclick="Reset()">RESET</button>
+            <button class="ResetBtn" onclick="reset()">RESET</button>
 
 
         </div>

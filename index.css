@@ -27,10 +27,10 @@ body {
 }
 
 #container {
-   position: absolute;
+position: relative;
     width: 750px;
     height: 380px;
-    left: 30%;
+     left: 26%;
     top: 200px;
     background: #FFFFFF;
     box-shadow: -1px 6px 55px rgba(0, 0, 0, 0.16);
@@ -161,7 +161,7 @@ body {
 
 .AddBtn {
     position: absolute;
-    margin-left: 72%;
+    margin-left: 66%;
     margin-bottom: 0px;
 
     height: 30px;
@@ -182,9 +182,11 @@ body {
 #PeopleValue {
 
     position: absolute;
+    height: 20px;
+    width: 20px;
     font-size: 18px;
-    margin-top: 4px;
-    margin-left: 80%;
+    margin-top: 2px;
+    margin-left: 74%;
 
 }
 
@@ -222,7 +224,8 @@ body {
     color: #C39FFF;
 
 }
-.PerPerson{
+
+.PerPerson {
     position: absolute;
     margin: 70px 0px 0px 30px;
     font-size: 15px;
@@ -230,7 +233,8 @@ body {
     letter-spacing: 4px;
     font-weight: 500;
 }
-.TotalAmount{
+
+.TotalAmount {
     position: absolute;
     margin: 150px 0px 0px 30px;
     font-size: 15px;
@@ -238,7 +242,8 @@ body {
     letter-spacing: 4px;
     font-weight: 500;
 }
-#TotalAm{
+
+#TotalAm {
     position: absolute;
     margin: 140px 0px 0px 200px;
     font-family: 'Inconsolata';
@@ -250,7 +255,8 @@ body {
 
     color: #C39FFF;
 }
-.PerPersonAmount{
+
+.PerPersonAmount {
     position: absolute;
     margin: 180px 0px 0px 30px;
     font-size: 15px;
@@ -258,13 +264,13 @@ body {
     letter-spacing: 4px;
     font-weight: 500;
 }
-.ResetBtn{
-    position: absolute;
-width: 295px;
-height: 43px;
-left: 27px;
-top: 250px;
-background: #C39FFF;
-border-radius: 8px;
-}
 
+.ResetBtn {
+    position: absolute;
+    width: 295px;
+    height: 43px;
+    left: 27px;
+    top: 250px;
+    background: #C39FFF;
+    border-radius: 8px;
+}
